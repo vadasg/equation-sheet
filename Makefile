@@ -3,6 +3,7 @@ TEX_NAME = equation_sheet
 all:
 	make clean
 	pdflatex ${TEX_NAME}.tex
+	make clean
 	open ${TEX_NAME}.pdf
 
 clean:
