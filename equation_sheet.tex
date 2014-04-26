@@ -1,0 +1,398 @@
+\documentclass[9pt,letterpaper]{article}
+\usepackage[pass]{geometry}
+\usepackage{amsmath}
+\usepackage[cm]{fullpage}
+\usepackage{bm}% bold math
+\usepackage{multirow}
+%\newcommand{\vect}[1]{\overrightarrow{\boldsymbol{#1}}}
+\newcommand{\vect}[1]{\vec{\boldsymbol{#1}}}
+\newcommand{\vhat}[1]{\hat{\boldsymbol{#1}}}
+\newcommand{\nn}{\\\nonumber}
+\addtolength{\textheight}{2in}
+\voffset=-0.6in
+\pagestyle{empty}
+
+\begin{document}
+\hspace{0.4in}
+\begin{minipage}[t]{0.23\linewidth}
+\begin{align*}
+&v_{\text{av},x} = \frac{x_{2} - x_{1}}{t_{2}-t_{1}} = \frac{\Delta x}{\Delta t}\\
+&v_{x}= \lim_{\Delta t\to 0}\frac{\Delta x}{\Delta t} = \frac{dx}{dt}\\
+&a_{\text{av},x} = \frac{v_{2,x} - v_{1,x}}{t_{2}-t_{1}} = \frac{\Delta v_{x}}{\Delta t}\\
+&a_{x}= \lim_{\Delta t\to 0}\frac{\Delta v_{x}}{\Delta t} = \frac{dv_{x}}{dt}\\
+&v_{x} = v_{0,x}+a_{x}t\\
+&x=x_{0}+v_{0,x}t+\frac{1}{2}a_{x}t^{2}\\
+&v_{x}^{2}=v_{0,x}^{2}+2a_{x}(x-x_{0})\\
+&x-x_{0}=\biggl(\frac{v_{0,x}+v_{x}}{2}\biggr)t\\
+\end{align*}
+\end{minipage}
+\begin{minipage}[t]{0.3\linewidth}
+\begin{align*}
+&x=x_{0}+v_{0,x}t\\
+&y=y_{0}+v_{0,y}t-\frac{1}{2}gt^{2}\\
+&v_{x} = v_{0,x}\\
+&v_{y} = v_{0,y}-gt\\\\\\
+&\omega = \frac{v}{R}\\
+&a_{rad}=\frac{v^{2}}{R}=\omega^{2}R=\frac{4\pi^{2}R}{T^{2}}\\
+&\vect{v}_{P,A} = \vect{v}_{P,B} + \vect{v}_{B,A}\\
+&\vect{v}_{A,B} = - \vect{v}_{B,A}\\
+\end{align*}
+\end{minipage}
+\begin{minipage}[t]{0.3\linewidth}
+\begin{align*}
+    &\vect{F}_{\text{Net}} = \sum_{i}\vect{F}_{i}\\
+    &\vect{F}_{\text{Net}}= m\vect{a}\\
+&\vect{F}_{\text{$A$ on $B$}} = -\vect{F}_{\text{$B$ on $A$}}\\
+&F_{W} = mg\\
+&\vect{F}_{S} = -k(\vect{x}-\vect{x}_{0})\\
+&g = +9.8\tfrac{m}{s^{2}}\\
+&F_{f_{k}} = \mu_{k}N\\
+&F_{f_{s}} \leq \mu_{s}N\\\\
+&\vect{A}\cdot\vect{B}=A_x B_x +A_y B_y +A_z B_z\\
+&\vect{A}\cdot\vect{B}= |\vect{A}||\vect{B}|\cos{\phi}\\\\
+\end{align*}
+\end{minipage}
+\vspace{-0.4in}
+\begin{center}
+\line(1,0){450}
+\end{center}
+\vspace{-0.3in}
+%%begin chapters 4-7
+%\hspace{-0.3in}
+\hspace{0.3in}
+\begin{minipage}[t]{0.3\linewidth}
+\begin{align*}
+&W_{1\rightarrow 2} = \int_{\vect{r}_{1}}^{\vect{r}_{2}} \vect{F}\cdot d\vect{l}\\
+&W=\vect{F}\cdot\vect{s}= Fs\cos{\phi}\\
+&K=\frac{1}{2}mv^{2}\\
+&W_{\text{Net}}=K_{f}-K_{i}=\Delta K\\
+\end{align*}
+\end{minipage}
+\begin{minipage}[t]{0.3\linewidth}
+\hspace{0.4in}
+\begin{align*}
+&\Delta U = U_{B} - U_{A} = -W_{A\rightarrow B}\\
+&E_{\text{Mechanical}} = K +U\\
+&\Delta E_{\text{Mechanical}} = W_{\text{NC}}\\
+&U_{\text{grav}} = mgh\\
+&U_{\text{spring}} = \frac{1}{2}kx^{2}\\
+&U = -W_{r\rightarrow r_{0}} +U_{0}\\
+&F_{x}(x) =-\frac{dU(x)}{dx}\\
+\end{align*}
+\end{minipage}
+\begin{minipage}[t]{0.3\linewidth}
+\hspace{0.4in}
+\begin{align*}
+&\vect{R}_{\text{CM}}=\frac{1}{M_{\text{Total}}}\sum_{i} m_{i}\vect{r}_{i}\\
+&\vect{R}_{\text{CM}}=\frac{1}{M_{\text{Total}}}\int \vect{r}dm\\
+&\vect{R}_{\text{CM}}=\frac{1}{M_{\text{Total}}}\sum_{i} M_{i}\vect{R}_{\text{CM},i}\\
+&\sum \vect{F}_{\text{ext}}=M\vect{A}_{\text{CM}}\\
+&\Delta K_{\text{CM}} = W_{\text{Total, ext}}\\
+\end{align*}
+\end{minipage}
+\vspace{-0.3in}
+\begin{center}
+\line(1,0){450}
+\end{center}
+\vspace{-0.3in}
+\begin{minipage}[t]{0.4\linewidth}
+\hspace{0.4in}
+\begin{align*}
+    &\sum\vect{F}=\frac{d\vect{p}}{dt}\\
+    &\vect{p} = m\vect{v}\\
+    &\vect{F}_{\text{Net,External}}=\frac{d\vect{P}_{\text{Total}}}{dt}
+\end{align*}
+\end{minipage}
+\hspace{-0.3in}
+\begin{minipage}[t]{0.6\linewidth}
+\begin{align*}
+    &\vect{P}_{\text{Total}}=M_{\text{Total}}\vect{V}_{\text{cm}}\\
+    &|\vect{v}_{2,f}-\vect{v}_{1,f}|=
+    |\vect{v}_{2,i}-\vect{v}_{1,i}|=
+    |\vect{v}_{2,i}^{*}-\vect{v}_{1,i}^{*}|=
+    |\vect{v}_{2,f}^{*}-\vect{v}_{1,f}^{*}|\\
+    &K_{\text{system,lab}} = \sum_{i}{\frac{1}{2}m_{i}v_{i}^{2}}+\frac{1}{2}M_{\text{Total}}v_{\text{CM}}^{2}\\
+\end{align*}
+\end{minipage}
+\vspace{-0.4in}
+
+\begin{minipage}[t]{0.3\linewidth}
+%\hspace{0.4in}
+    \vspace{0.1in}
+\begin{align*}
+&\omega = \frac{d\theta}{dt}\\
+&\alpha = \frac{d\omega}{dt} = \frac{d^{2}\theta}{d\theta^{2}}\\
+&\omega = \omega_{0}+\alpha t\\
+&\theta=\theta_{0}+\omega_{0}t+\frac{1}{2}\alpha t^{2}
+\end{align*}
+\end{minipage}
+\begin{minipage}[t]{0.3\linewidth}
+\begin{align*}
+&\omega^{2}=\omega_{0}^{2}+2\alpha(\theta-\theta_{0})\\
+&\theta-\theta_{0}=\biggl(\frac{\omega_{0}+\omega}{2}\biggr)t\\
+&v=r\omega\\
+&a_{\text{tan}} = r\alpha
+\end{align*}
+\end{minipage}
+\begin{minipage}[t]{0.3\linewidth}
+\begin{align*}
+&a_{\text{rad}} = \frac{v^{2}}{r}=\omega^{2}r\\
+&I = \sum_{i}m_{i}r^{2}_{i}\\
+&K=\frac{1}{2}I\omega^{2}
+\end{align*}
+\end{minipage}
+%\vspace{-0.3in}
+\begin{center}
+\line(1,0){450}
+\end{center}
+\vspace{-0.3in}
+\hspace{0.6in}
+\begin{minipage}[t]{0.25\linewidth}
+\begin{align*}
+&I_{\text{Total}} =I_{\text{CM}}+MD^{2}\\
+&K_{\text{Total}} = \frac{1}{2}Mv_{\text{CM}}^{2} + \frac{1}{2}I_{\text{CM}}\omega^{2}\\
+&\tau =R_{\perp}F = (r\sin{\theta})F\\
+&\vect{\tau} = \vect{r}\times \vect{F}\\
+&\sum \vect{\tau} = I \vect{\alpha}\\
+&\vect{\tau}_{\text{grav}} = \vect{R}_{\text{CM}}\times M\vect{g}\\
+&\vect{L}=\vect{r}\times \vect{p}\\
+&\vect{L}=I\vect{\omega}
+\end{align*}
+\end{minipage}
+%\hspace{-0.2in}\begin{minipage}[t]{0.3\linewidth}
+\begin{minipage}[t]{0.3\linewidth}
+\begin{align*}
+&\sum \vect{\tau}=\frac{d\vect{L}}{dt}\\
+&U_{\text{grav}} = Mg{Y}_{\text{CM}}\\
+    &F_{x} = -kx\\
+    &\omega = \sqrt{\frac{k}{m}}\\
+    &\frac{d^{2}x}{dt^{2}} = -\omega^{2}x\\
+    &T = \frac{2\pi}{\omega}
+\end{align*}
+\end{minipage}
+\hspace{-0.2in}\begin{minipage}[t]{0.3\linewidth}
+\begin{align*}
+    &x(t) = A \cos{(\omega t + \phi)}\\
+    &v(t) = -\omega A \sin{(\omega t + \phi)}\\
+    &a(t) = -\omega^{2} A \cos{(\omega t + \phi)} = -\omega^{2}x(t)\\
+    &\omega = \sqrt{\frac{g}{L}}\\
+    &\omega = \sqrt{\frac{MgR_{\text{CM}}}{I}}
+\end{align*}
+\end{minipage}
+%\vspace{-0.3in}
+%\begin{center}
+%\line(1,0){450}
+%\end{center}
+
+
+
+\hspace{-0.2in}
+\vspace{0.3in}
+\begin{center}
+\begin{tabular}{|lll|lll|lll|lll|lll|lll|}
+    \hline
+    hecto & h & $10^{2}$ &kilo & k & $10^{3}$ & mega & M & $10^{6}$ & giga & G & $10^{9}$ & tera & T & $10^{12}$ & peta & P & $10^{15}$ \\
+ \hline
+    centi & c & $10^{-2}$ & milli & m & $10^{-3}$ & micro & $\mu$ & $10^{-6}$ & nano & n & $10^{-9}$ & pico & p & $10^{-12}$ & femto & f & $10^{-15}$ \\
+    \hline
+\end{tabular}
+\end{center}
+
+%\end{document}
+\newpage
+%%begin chapters 21 - 24
+%\hspace{-0.3in}
+\begin{minipage}[t]{0.50\linewidth}
+\begin{align*}
+    &F_{12} = k\frac{|q_{1}q_{2}|}{r_{12}^{2}} \hspace{0.05\linewidth}\text{(2 point charges)}\\
+    &\epsilon_{0} = 8.85 \times 10^{-12} \text{F}/\text{m}\\
+    &k = \frac{1}{4 \pi \epsilon_{0}} = 9 \times 10^{9} \text{N}\cdot\text{m}^{2}/\text{C}^{2}\\
+    &\vect{E} = \frac{\vect{F}}{q} = \frac{kq}{r^{2}}\vhat{r} \hspace{0.05\linewidth}\text{(point charge)}\\
+    &\vect{E} = k\sum_{i}\frac{q_{i}}{r_{i}^{2}}\vhat{r}_{i} \hspace{0.05\linewidth}\text{(point charges)}\\
+    &\vect{E} = k\int\frac{dq}{r^{2}}\vhat{r} \hspace{0.05\linewidth}\text{(continuous charge distribution)}\\
+    &E = \frac{\lambda}{2\pi\epsilon_{0}r} \hspace{0.05\linewidth}\text{(infinite line)}\\
+    &E = \frac{\sigma}{2\epsilon_{0}} \hspace{0.05\linewidth}\text{(infinite sheet)}\\
+    &\Phi =\int \vect{E}\cdot\vect{dA}\\
+\end{align*}
+\end{minipage}
+%\hspace{0.4in}
+\begin{minipage}[t]{0.50\linewidth}
+\begin{align*}
+    &\Phi_{\text{Net}} =\oint \vect{E}\cdot \vect{dA}=\frac{Q_{\text{enc}}}{\epsilon_{0}}\\
+    &\Delta U_{A\to B} = -W_{A\to B} = -\int_{A}^{B}\vect{F}_{\text{E}} \cdot \vect{dl}\\
+    &U = k\frac{q_{1}q_{2}}{r} \hspace{0.05\linewidth}\text{(2 point charges)} \\
+    &U = k\sum_{\text{pairs}}\frac{q_{i}q_{j}}{r_{ij}} \hspace{0.05\linewidth}\text{(pairs of point charges)} \\
+    &V = \frac{U}{q} = \frac{kq}{r} \hspace{0.05\linewidth}\text{(point charge)}\\
+    &V = k\sum_{i}\frac{q_{i}}{r_{i}}\hspace{0.05\linewidth}\text{(point charges)}\\
+    &\Delta V_{A\to B} = -\int_{A}^{B} \vect{E}\cdot d\vect{l}\\
+    &\vect{E} = -\bigl( \vhat{\imath} \frac{\partial V}{\partial x} + \vhat{\jmath} \frac{\partial V}{\partial y} + \vhat{k} \frac{\partial V}{\partial z} \bigr)\\
+\end{align*}
+\end{minipage}
+\vspace{-0.4in}
+\begin{center}
+\line(1,0){450}
+\end{center}
+
+\vspace{-0.3in}
+\begin{minipage}[t]{0.30\linewidth}
+\begin{align*}
+    &C = \frac{Q}{V} \qquad C_{\text{new}} = \kappa C_{0}\\
+    &C = \epsilon_{0} \frac{A}{d};\hspace{2mm} E = \frac{\sigma}{\epsilon_{0}} \hspace{0.05\linewidth}\text{(parallel-plate)}\\
+    &\frac{1}{C_{\text{eq}}} = \frac{1}{C_{1}} + \frac{1}{C_{2}} + \frac{1}{C_{3}} + \cdots \hspace{0.01\linewidth}\text{(series)}\\
+    &C_{\text{eq}} = C_{1} + C_{2} +C_{3} + \cdots \hspace{0.01\linewidth}\text{(parallel)}\\
+    &U = \frac{Q^2}{2 C} = \frac{1}{2}CV^{2} =\frac{1}{2}QV\\
+\end{align*}
+\end{minipage}
+\begin{minipage}[t]{0.33\linewidth}
+\begin{align*}
+    &u = \frac{1}{2}\epsilon_{0}E^{2} \qquad I = \frac{dq}{dt} \qquad V = IR\\
+    &P = VI = I^{2}R = \frac{V^{2}}{R}\\
+    &R =\rho\frac{L}{A}=\frac{1}{\sigma}\frac{L}{A}\\
+    &R_{\text{eq}} = R_{1} + R_{2} + R_{3} + \cdots \hspace{0.01\linewidth}\text{(series)}\\
+    &\frac{1}{R_{\text{eq}}} = \frac{1}{R_{1}} + \frac{1}{R_{2}} + \frac{1}{R_{3}} + \cdots \hspace{0.01\linewidth}\text{(parallel)}\\
+\end{align*}
+\end{minipage}
+\hspace{-0.2in}
+\begin{minipage}[t]{0.33\linewidth}
+\begin{align*}
+    &\sum I_{\text{in}} = \sum I_{\text{out}} \hspace{0.05\linewidth}\text{(junction rule)}\\
+    &\sum \Delta V_{n} = 0 \hspace{0.05\linewidth}\text{(loop rule)}\\
+    &\tau=RC\\
+    &I(t) = I_{0}e^{-t/RC}\\
+    &q(t) = q_{\text{f}}(1-e^{-t/RC}) \hspace{0.05\linewidth}\text{(charging)}\\
+    &q(t) = q_{\text{0}}e^{-t/RC} \hspace{0.05\linewidth}\text{(discharging)}\\
+\end{align*}
+\end{minipage}
+\vspace{-0.25in}
+\begin{center}
+\line(1,0){450}
+\end{center}
+
+
+\vspace{-0.35in}
+\begin{minipage}[t]{0.30\linewidth}
+\begin{align*}
+    &\mu_{0} = 4\pi \times 10^{-7} T\cdot m/A\\
+    &\vect{F}=q\vect{v}\times \vect{B}\\
+    &\vect{F}=I\vect{L}\times \vect{B}\\
+    &\vect{\mu} = NI\vect{A}\\
+    &\vect{\tau}=\vect{\mu}\times \vect{B}\\
+    &U(\theta)=-\vect{\mu}\cdot\vect{B}=-\mu B\cos{\theta}\\
+\end{align*}
+\end{minipage}
+\begin{minipage}[t]{0.33\linewidth}
+\begin{align*}
+    &d\vect{B} = \frac{\mu_{0}I}{4\pi} \frac{d\vect{s}\times \vhat{r}}{r^{2}}\\
+    &B = \frac{\mu_{0}I}{2\pi R} \hspace{0.05\linewidth}\text{(long wire)} \\
+    &B = \mu_{0}nI\hspace{0.05\linewidth}\text{(inside solenoid)}\\
+    &B = \frac{1}{2}\mu_{0}nI\hspace{0.05\linewidth}\text{(infinite sheet)}\\
+    &F_{1} = F_{2} = \frac{\mu_{0}}{2\pi d} I_{1}I_{2}L \hspace{0.05\linewidth}\text{(parallel wires)}\\
+\end{align*}
+\end{minipage}
+\hspace{-0.2in}
+\begin{minipage}[t]{0.33\linewidth}
+\begin{align*}
+    &\oint \vect{B}\cdot d\vect{l} = \mu_{0} I + \mu_{0} \epsilon_{0} \frac{d}{dt} \int \vect{E}\cdot d\vect{A}\\
+    &\Phi_{B} = \int \vect{B}\cdot \vect{A}\\
+    &\mathcal{E}_{\text{ind}} = -\frac{d}{dt}\Phi_{B}\\
+    &\oint \vect{E}\cdot d\vect{l} = -\frac{d}{dt} \int \vect{B}\cdot d\vect{A}\\
+\end{align*}
+\end{minipage}
+\vspace{-0.3in}
+\begin{center}
+\line(1,0){450}
+\end{center}
+
+
+\vspace{-0.3in}
+\begin{minipage}[t]{0.33\linewidth}
+\begin{align*}
+    &L=\frac{\Phi_{B}}{I}; \quad \mathcal{E}_{L} = -L\frac{dI}{dt}\\
+    &U_{L} = \frac{1}{2}LI^{2}; \quad u_{B} = \frac{B^{2}}{2\mu_{0}}\\
+    &\omega_{0} = \frac{1}{\sqrt{LC}}\\
+    &I(t) = I_{m} \sin{(\omega t+\phi)}\\
+    &\mathcal{E}(t) = \mathcal{E}_{m} \sin{(\omega t)}\\
+\end{align*}
+\end{minipage}
+\begin{minipage}[t]{0.3\linewidth}
+\begin{align*}
+%    &I_{\text{rms}} = \frac{I}{\sqrt{2}}\\
+%    &V_{\text{rms}} = \frac{V}{\sqrt{2}}\\
+    &\mathcal{E}_{m} = I_{m}Z;\quad V_{R_{max}} = I_{m}R\\
+    &V_{L_{max}} = I_{m}X_{L};\quad X_{L}=\omega L\\
+    &V_{C_{max}} = I_{m}X_{C};\quad X_{C}=\frac{1}{\omega C}\\
+    &Z = \sqrt{R^{2}+(X_{L}-X_{C})^{2}}\\
+    &\tan \phi = \frac{X_{L}-X_{C}}{R}\\
+\end{align*}
+\end{minipage}
+\begin{minipage}[t]{0.33\linewidth}
+\begin{align*}
+    &\frac{V_{S}}{V_{P}} = \frac{I_{P}}{I_{S}} = \frac{N_{S}}{N_{P}}\\
+    &I_{D}=\epsilon_{0} \frac{d}{dt} \int \vect{E}\cdot d\vect{A}\\
+    &E_{0}=cB_{0}; c=\frac{1}{\sqrt{\epsilon_{0}\mu_{0}}}\\
+    &\vect{S}=\frac{\vect{E} \times \vect{B}}{\mu_{0}}; I = c\epsilon_{0}E_{0}^{2}\\
+\end{align*}
+\end{minipage}
+\vspace{-0.3in}
+\begin{center}
+\line(1,0){450}
+\end{center}
+
+
+\vspace{-0.4in}
+\begin{minipage}[t]{0.33\linewidth}
+\begin{align*}
+    &I_{\text{final}}=I_{0}\cos^{2}{\theta}\\
+    &\theta_{I} = \theta_{R}\\
+    &v=\frac{c}{n}\\
+\end{align*}
+\end{minipage}
+\begin{minipage}[t]{0.3\linewidth}
+\begin{align*}
+    &n_{1}\sin{\theta_{1}} = n_{2}\sin{\theta_{2}}\\
+    &\theta_{c} = \sin^{-1}{\frac{n_{2}}{n_{1}}}\\
+\end{align*}
+\end{minipage}
+\begin{minipage}[t]{0.33\linewidth}
+\begin{align*}
+    &\frac{1}{s} + \frac{1}{s^{\prime}} = \frac{1}{f}\\
+    &M=\frac{h^{\prime}}{h}\\
+\end{align*}
+\end{minipage}
+\vspace{-0.4in}
+%\begin{center}
+%\line(1,0){450}
+%\end{center}
+
+
+
+
+         \vspace{0.3in}
+
+\begin{minipage}[t]{\linewidth}
+    \begin{tabular}{|l l l|l l l|l|}
+        \hline
+        &{\bf SI Units}& & &Base units: &m, kg, s, A &\\
+        \hline
+        Hz &s$^{-1}$&1/s&F &kg$^{-1}$$\cdot$m$^{-2}$$\cdot$s$^{4}$$\cdot$A$^{2}$&C/V& \\
+        N &kg$\cdot$m$\cdot$s$^{-2}$&kg$\cdot$m/s$^{2}$& $\Omega$&kg$\cdot$m$^{2}$$\cdot$s$^{-3}$$\cdot$A$^{-2}$&V/A&Prof. Vadas Gintautas\\
+        J &kg$\cdot$m$^{2}$$\cdot$s$^{-2}$&N$\cdot$m=C$\cdot$V=W$\cdot$s& Wb &kg$\cdot$m$^{2}$$\cdot$s$^{-2}$$\cdot$A$^{-1}$&J/A &PHY251/PHY252\\
+        W &kg$\cdot$m$^{2}$$\cdot$s$^{-3}$&J/s=V$\cdot$A& H &kg$\cdot$m$^{2}$$\cdot$s$^{-2}$$\cdot$A$^{-2}$&V$\cdot$s/A=Wb/A&Chatham University\\
+        C &s$\cdot$A&s$\cdot$A& T &kg$\cdot$s$^{-2}$$\cdot$A$^{-1}$&V$\cdot$s/m$^{2}$=Wb/m$^{2}$=N/(A$\cdot$m)&Fall 2013 -- Spring 2014\\
+        V &kg$\cdot$m$^{2}$$\cdot$s$^{-3}$$\cdot$A$^{-1}$ &W/A=J/C & & &&\\
+        \hline
+          \end{tabular}
+\end{minipage}
+
+%          \vspace{-0.3in}
+%\hspace{0.8\linewidth}
+%\begin{minipage}[t]{0.33\linewidth}
+%          \begin{tabular}{l l}
+%          &Prof. Vadas Gintautas\\
+%          &PHY251/PHY252\\
+%          &Chatham University\\
+%          &Fall 2013 -- Spring 2014\\
+%          \end{tabular}
+%\end{minipage}
+
+\end{document}
